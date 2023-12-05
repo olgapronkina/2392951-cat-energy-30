@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Olya Pronkina](https://up.htmlacademy.ru/adaptive/30/user/2392951).
-* Наставник: `Неизвестно`.
+- Студент: [Olya Pronkina](https://up.htmlacademy.ru/adaptive/30/user/2392951).
+- Наставник: Андрей Изосимов (https://htmlacademy.ru/profile/id605037).
 
 ---
 
