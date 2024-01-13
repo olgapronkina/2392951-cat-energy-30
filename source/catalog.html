@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="source/styles.css" />
   </head>
 
   <body>
     <header class="main-header">
       <a class="main-header__logo logo" href="index.html">
-        <img
-          class="logo__image logo__image--icon"
-          src="../source/images/logopic.svg"
-          width="70"
-          height="59"
-          alt="логотип Cat energy."
-        />
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/logopic.svg" />
+          <img
+            class="logo__image logo__image--icon"
+            src="../source/images/logo-mobile.svg"
+            width="70"
+            height="59"
+            alt="логотип Cat energy."
+          />
+        </picture>
+
         <img
           class="logo__image logo__image--text"
           src="../source/images/logotext.svg"
