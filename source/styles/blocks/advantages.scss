@@ -1,0 +1,55 @@
+.advantages {
+  //
+}
+
+.advantages__wrapper {
+  //
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.advantages__list {
+  list-style-type: none;
+}
+
+.advantages__item {
+  //
+}
+
+.advantages__item::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-position: center;
+}
+
+.advantages__item--nutrients::after {
+  background-image: url("../../images/icons/stack.svg#nutrients");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--powder::after {
+  background-image: url("../../images/icons/stack.svg#powder");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--substitute::after {
+  background-image: url("../../images/icons/stack.svg#substitute");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--pleasure::after {
+  background-image: url("../../images/icons/stack.svg#pleasure");
+  background-repeat: no-repeat;
+}
+
+.advantages__description {
+  font-family: $secondary-font;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+}
