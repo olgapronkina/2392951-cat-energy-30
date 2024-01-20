@@ -1,0 +1,48 @@
+.copyright {
+  //
+}
+
+.copyright__text {
+  content: "";
+  display: block;
+  font-family: $secondary-font;
+  color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.copyright__text:hover {
+  color: #444444;
+}
+
+.copyright__text:focus {
+  color: #444444;
+}
+
+.copyright__text:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.copyright__image {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-image: url("../../images/icons/stack.svg#logo_html");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.copyright__image:hover {
+  background-color: #68b738;
+}
+
+.copyright__image:focus {
+  background-color: #68b738;
+}
+
+.copyright__image:active {
+  background-color: rgba(104, 183, 56, 0.3);
+}

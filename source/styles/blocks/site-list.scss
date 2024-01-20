@@ -1,0 +1,38 @@
+.site-list {
+  //
+}
+
+.site-list__item {
+  //
+}
+
+.site-list__item--current {
+  //
+}
+
+.site-list__link {
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list__link--current {
+  //
+}

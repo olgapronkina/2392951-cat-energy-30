@@ -1,0 +1,51 @@
+.product {
+  font-family: $secondary-font;
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__image {
+  //
+}
+
+.product__title {
+  font-family: $primary-font;
+  color: #222222;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product__weight {
+  //
+}
+
+.product__weight-value {
+  //
+}
+
+.product__flavor {
+  //
+}
+
+.product__flavor-value {
+  //
+}
+
+.product__price {
+  //
+}
+
+.product__price-value {
+  //
+}
+
+.product__button {
+  border: 0;
+  padding: 10px 0;
+}
