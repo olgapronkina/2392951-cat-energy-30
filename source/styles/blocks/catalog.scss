@@ -2,14 +2,20 @@
   //
 }
 
-.catalog__wrapper {
-  //
+.catalog__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 .catalog__list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .catalog__item {
-  //
+  padding: 20px 20px 25px;
 }

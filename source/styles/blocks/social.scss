@@ -3,7 +3,7 @@
 }
 
 .social__list {
-  //
+  display: flex;
 }
 
 .social__item {
@@ -27,23 +27,23 @@
   mask: var(--bgi) no-repeat center / contain;
 }
 
-.social__link--vkontakte {
-  --bgi: url("../../images/icons/stack.svg#vkontakte");
-}
+// .social__link--vkontakte {
+//   --bgi: url("../../images/icons/stack.svg#vkontakte");
+// }
 
-.social__link--youtube {
-  --bgi: url("../../images/icons/stack.svg#youtube");
-}
+// .social__link--youtube {
+//   --bgi: url("../../images/icons/stack.svg#youtube");
+// }
 
-.social__link--telegram {
-  --bgi: url("../../images/icons/stack.svg#telegram");
-}
+// .social__link--telegram {
+//   --bgi: url("../../images/icons/stack.svg#telegram");
+// }
 
-.social__link:hover,
-.social__link:focus {
-  --color: #68b738;
-}
+// .social__link:hover,
+// .social__link:focus {
+//   --color: #68b738;
+// }
 
-.social__link:active {
-  --color: rgb(104, 183, 56, 0.3);
-}
+// .social__link:active {
+//   --color: #68b7384d;
+// }

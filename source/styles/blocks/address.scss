@@ -1,21 +1,21 @@
-.address {
+.user-contacts {
   border: none;
 }
 
-.address__title {
+.user-contacts__title {
   font-size: 24px;
   line-height: 26px;
 }
 
-.address__list {
+.user-contacts__list {
   list-style-type: none;
 }
 
-.address__item {
+.user-contacts__item {
   //
 }
 
-.address__label {
+.user-contacts__label {
   color: #444444;
   font-family: $primary-font;
   font-size: 16px;
@@ -24,7 +24,7 @@
   text-transform: uppercase;
 }
 
-.address__input {
+.user-contacts__input {
   color: #444444;
   font-family: $primary-font;
   font-size: 16px;
@@ -33,16 +33,16 @@
   text-transform: uppercase;
 }
 
-.address__input--email {
+.user-contacts__input--email {
   display: block;
   content: "";
-  background-image: url("../../images/icons/stack.svg#email");
+  // background-image: url("../../images/icons/stack.svg#email");
   background-repeat: no-repeat;
 }
 
-.address__input--telephone {
+.user-contacts__input--telephone {
   display: block;
   content: "";
-  background-image: url("../../images/icons/stack.svg#phone");
+  // background-image: url("../../images/icons/stack.svg#phone");
   background-repeat: no-repeat;
 }

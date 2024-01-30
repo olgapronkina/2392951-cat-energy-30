@@ -2,7 +2,7 @@ export default {
   multipass: true,
   plugins: [
     {
-      name: "preset-default",
+      name: 'preset-default',
       params: {
         overrides: {
           // customize options for plugins included in preset
@@ -17,6 +17,6 @@ export default {
       },
     },
     // enable builtin plugin not included in default preset
-    "removeDimensions",
+    'removeDimensions',
   ],
 };
