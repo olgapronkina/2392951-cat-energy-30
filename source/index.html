@@ -14,8 +14,6 @@
             type="image/svg+xml"
             media="(min-width: 768px)"
             srcset="images/logo-icon.svg"
-            width="60"
-            height="50"
           />
           <img
             class="logo__image logo__image--icon"
@@ -75,21 +73,17 @@
               type="image/png"
               media="(min-width: 1200px)"
               srcset="
-                images/index-can-desktop@1x.png,
-                images/index-can-desktop@2x.png
+                ./images/index-can-desktop@1x.png,
+                ./images/index-can-desktop@2x.png
               "
-              width="552"
-              height="499"
             />
             <source
               type="image/png"
               media="(min-width: 768px)"
               srcset="
-                images/index-can-tablet@1x.png,
-                images/index-can-tablet@2x.png
+                ./images/index-can-tablet@1x.png,
+                ./images/index-can-tablet@2x.png
               "
-              width="709"
-              height="609"
             />
 
             <img
@@ -147,7 +141,7 @@
                 готово.
               </p>
             </li>
-            <li class="benefits__item benefits__item--subsitute">
+            <li class="benefits__item benefits__item--substitute">
               <p
                 class="benefits__description benefits__description--nourishing"
               >
@@ -198,14 +192,16 @@
             type="image/jpg"
             media="(min-width: 768px)"
             srcset="
-              ../source/images/cat-before-tablet-desktop@1x.jpg,
-              ../source/images/cat-before-tablet-desktop@2x.jpg
+              ../source/images/cat-before-tablet-desktop@1x.jpg 1x,
+              ../source/images/cat-before-tablet-desktop@2x.jpg 2x
             "
           />
           <img
             class="example__image--fat"
-            src="../source/images/cat-before-mobile@1x.jpg"
-            srcset="../source/images/cat-before-mobile@2x.jpg"
+            srcset="
+              ../source/images/cat-before-mobile@1x.jpg 1x,
+              ../source/images/cat-before-mobile@2x.jpg 2x
+            "
             width="280"
             height="256"
             alt="Кот Борис до того как попробавал питание Cat Energy."
@@ -217,8 +213,8 @@
             type="image/jpg"
             media="(min-width: 768px)"
             srcset="
-              ../source/images/cat-after-tablet-desktop@1x.jpg,
-              ../source/images/cat-after-tablet-desktop@2x.jpg
+              ../source/images/cat-after-tablet-desktop@1x.jpg 1x,
+              ../source/images/cat-after-tablet-desktop@2x.jpg 2x
             "
           />
           <img

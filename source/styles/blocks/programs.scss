@@ -16,11 +16,11 @@
   background: #f2f2f2;
 
   &--weight-loss {
-    // background-image: url("../../images/icons/stack.svg#cat-weight-loss");
+    background-image: url("../../images/icons/stack.svg#cat-black");
   }
 
   &--weight-gain {
-    // background-image: url("../../images/icons/stack.svg#cat-weight-gain");
+    background-image: url("../../images/icons/stack.svg#panter-black");
   }
 }
 
@@ -68,7 +68,7 @@
   height: 10px;
   margin-left: 15px;
   background-color: #000000;
-  // mask-image: url("../../images/icons/stack.svg#icon_arrow");
+  mask-image: url("../../images/icons/stack.svg#icon-arrow");
   mask-position: center;
   mask-repeat: no-repeat;
   background-position-x: -8px;

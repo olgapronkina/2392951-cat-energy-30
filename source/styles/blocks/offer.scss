@@ -1,21 +1,24 @@
 .offer {
-  //
+  width: 280px;
+  height: 290px;
+  background-image: url("../../images/promo-mobile.jpg");
+  background-repeat: no-repeat;
+  // position: relative;
 }
 
 .offer__wrapper {
-  width: 245px;
-  height: 288px;
-  // background-image: url("../../images/promo-mobile.jpg");
-  background: #68b738;
-  opacity: 0.8;
+  width: 280px;
+  height: 290px;
+  background-color: #68b738d9;
 }
 
 .offer__wrapper::before {
   display: block;
+  // position: absolute;
   content: "";
   width: 80px;
   height: 83px;
-  // background-image: url("../../images/icons/stack.svg#gift");
+  background-image: url("../../images/icons/stack.svg#gift");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -25,4 +28,6 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+  margin-top: 185px;
 }
