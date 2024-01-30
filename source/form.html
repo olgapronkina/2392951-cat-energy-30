@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
@@ -41,23 +42,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="main-nav__link" href="index.html" aria-current="page">
+              <a class="site-list__link" href="index.html" aria-current="page">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
 
             <li class="site-list__item">
               <a
-                class="main-nav__link main-nav__link--current"
+                class="site-list__link site-list__link--current"
                 href="form.html"
+                >Подбор программы</a
               >
-                Подбор программы
-              </a>
             </li>
           </ul>
         </div>
@@ -73,131 +73,156 @@
         <p class="page-form__paragraph">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
-        <fieldset>
+        <fieldset class="page-form__info info">
           <legend class="visually-hidden">Анкета</legend>
-          <ul class="page-form__primary-list primary-list">
-            <li class="primary-list__item">
-              <label>
+          <ul class="info__list">
+            <li class="info__item">
+              <label class="info__label">
                 Имя:*
-                <input name="name" type="text" placeholder="Барсик" required
-              /></label>
+                <input
+                  class="info__input"
+                  name="name"
+                  type="text"
+                  placeholder="Барсик"
+                  required
+                />
+              </label>
             </li>
-            <li class="primary-list__item">
-              <label>
+            <li class="info__item">
+              <label class="info__label">
                 Вес (кг)*:
-                <input name="weight" type="number" placeholder="7" required
+                <inpu
+                  class="info__input"
+                  name="weight"
+                  type="number"
+                  placeholder="7"
+                  required
               /></label>
             </li>
-            <li class="primary-list__item">
-              <label>
-                Возраст (лет): <input name="age" type="number" placeholder="7"
+            <li class="info__item">
+              <label class="info__label">
+                Возраст (лет):
+                <input
+                  class="info__input"
+                  name="age"
+                  type="number"
+                  placeholder="7"
               /></label>
             </li>
           </ul>
-
-          <ul class="page-form__secondary-list radio-list">
-            <li class="radio-list__item">
-              <label><input name="goal" type="radio" checked />Похудение</label>
+        </fieldset>
+        <fieldset class="page-form__program program">
+          <legend class="visually-hidden">Программа похудения</legend>
+          <ul class="program__list">
+            <li class="program__item">
+              <label class="program__label">
+                <input name="goal" type="radio" checked />Похудение
+                <span class="program__mark"></span>
+              </label>
             </li>
-            <li class="radio-list__item">
-              <label><input name="goal" type="radio" />Набор массы</label>
+            <li class="program__item">
+              <label class="program__label">
+                <input name="goal" type="radio" />Набор массы
+                <span class="program__mark"></span>
+              </label>
             </li>
-            <li class="radio-list__item">
-              <label
-                ><input name="goal" type="radio" />Не знаю (Нужен вашсовет)
+            <li class="program__item">
+              <label class="program__label">
+                <input name="goal" type="radio" />Не знаю (Нужен вашсовет)
+                <span class="program__mark"></span>
               </label>
             </li>
           </ul>
-
-          <section class="user-contacts">
-            <h2 class="user-contacts__title">
-              Контактные данные (владельца кота)
-            </h2>
-            <ul class="user-contacts__list">
-              <li class="user-contacts__item">
-                E-mail:*
-                <label>
-                  <input
-                    class="user-contacts__input"
-                    name="E-mail"
-                    type="email"
-                    placeholder="kuklachev@gmail.com"
-                    required
-                /></label>
-              </li>
-              <li class="user-contacts__item">
-                Телефон:*
-                <label>
-                  <input
-                    class="user-contacts__input"
-                    name="telephone"
-                    type="tel"
-                    placeholder="8 (960) 900-60-90"
-                    required
-                /></label>
-              </li>
-            </ul>
-          </section>
-
-          <section class="user-comments">
-            <h2 class="user-comments__title">Комментарий</h2>
-            <label>
-              <input
-                class="user-comments__input"
-                name="comments"
-                type="text"
-                placeholder="Расскажите обо всех повадках кота"
-            /></label>
-          </section>
-
-          <section class="adding-detales">
-            <h2 class="adding-detales__title">Дополнительно</h2>
-            <ul class="adding-detales__list checkbox-list">
-              <li class="checkbox-list__item">
-                <label>
-                  <input
-                    class="adding-detales__input"
-                    name="add"
-                    type="checkbox"
-                    checked
-                  />Сахарозаменитель
-                </label>
-              </li>
-
-              <li class="checkbox-list__item">
-                <label>
-                  <input
-                    class="adding-detales__input"
-                    name="add"
-                    type="checkbox"
-                  />Питьевая вода
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label>
-                  <input
-                    class="adding-detales__input"
-                    name="milk"
-                    type="checkbox"
-                  />Молоко
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <label>
-                  <input
-                    class="adding-detales__input"
-                    name="vitamins"
-                    type="checkbox"
-                  />Витамины
-                </label>
-              </li>
-            </ul>
-          </section>
-          <button class="page-form__button" type="submit">
-            Отправить заявку
-          </button>
-          <span>* — Обязательные поля</span>
         </fieldset>
+
+        <section class="user-contacts">
+          <h2 class="user-contacts__title">
+            Контактные данные (владельца кота)
+          </h2>
+          <ul class="user-contacts__list">
+            <li class="user-contacts__item">
+              <label class="user-contacts__label">
+                E-mail:*
+                <input
+                  class="user-contacts__input user-contacts__input--email"
+                  name="E-mail"
+                  type="email"
+                  placeholder="kuklachev@gmail.com"
+                  required
+              /></label>
+            </li>
+            <li class="user-contacts__item">
+              <label class="user-contacts__label">
+                Телефон:*
+                <input
+                  class="user-contacts__input user-contacts__input--phone"
+                  name="telephone"
+                  type="tel"
+                  placeholder="8 (960) 900-60-90"
+                  required
+              /></label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="user-comments">
+          <h2 class="user-comments__title">Комментарий</h2>
+          <label class="user-comments__label">
+            <input
+              class="user-comments__input"
+              name="comments"
+              type="text"
+              placeholder="Расскажите обо всех повадках кота"
+          /></label>
+        </section>
+
+        <section class="adding-detales">
+          <h2 class="adding-detales__title">Дополнительно</h2>
+          <ul class="adding-detales__list checkbox-list">
+            <li class="checkbox-list__item">
+              <label>
+                <input
+                  class="adding-detales__input"
+                  name="add"
+                  type="checkbox"
+                  checked
+                />Сахарозаменитель
+              </label>
+            </li>
+
+            <li class="checkbox-list__item">
+              <label>
+                <input
+                  class="adding-detales__input"
+                  name="add"
+                  type="checkbox"
+                />Питьевая вода
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <label>
+                <input
+                  class="adding-detales__input"
+                  name="milk"
+                  type="checkbox"
+                />Молоко
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <label>
+                <input
+                  class="adding-detales__input"
+                  name="vitamins"
+                  type="checkbox"
+                />Витамины
+              </label>
+            </li>
+          </ul>
+        </section>
+        <button class="page-form__button button button--primary" type="submit">
+          Отправить заявку
+        </button>
+        <span>* — Обязательные поля</span>
       </form>
 
       <section class="contacts">
@@ -232,10 +257,10 @@
         <section class="main-footer__social social">
           <h3 class="visually-hidden">Мы в соц сетях</h3>
 
-          <ul class="social-list">
-            <li class="social-list__item social-item">
+          <ul class="social__list">
+            <li class="social__item">
               <a
-                class="social-item__link social-item__link--vkontakte"
+                class="social__link social__link--vkontakte"
                 href="#"
                 aria-label="ВКонтакте."
               >
@@ -253,9 +278,9 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-item">
+            <li class="social__item">
               <a
-                class="social-item__link social-item__link--youtube"
+                class="social__link social__link--youtube"
                 href="#"
                 aria-label="Ютуб."
               >
@@ -273,9 +298,9 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-item">
+            <li class="social__item">
               <a
-                class="social-item__link social-item__link--telegram"
+                class="social__link social__link--telegram"
                 href="#"
                 aria-label="Телеграм."
               >
@@ -297,23 +322,26 @@
             </li>
           </ul>
         </section>
-        <a class="main-footer__html-academy-logo" href="#">
-          HTML Academy
-          <svg
-            width="27"
-            height="34"
-            viewBox="0 0 27 34"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g>
-              <path
-                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-                fill="#666666"
-              />
-            </g>
-          </svg>
-        </a>
+        <section class="main-footer__copyright copyright">
+          <a class="copyright__text" href="#">
+            HTML Academy
+            <svg
+              class="copyright__image"
+              width="27"
+              height="34"
+              viewBox="0 0 27 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <path
+                  d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+                  fill="#666666"
+                />
+              </g>
+            </svg>
+          </a>
+        </section>
       </div>
     </footer>
   </body>

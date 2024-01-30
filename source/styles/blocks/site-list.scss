@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .site-list {
   //
 }
@@ -6,12 +8,10 @@
   //
 }
 
-.site-list__item--current {
-  //
-}
-
 .site-list__link {
   font-family: $primary-font;
+  display: block;
+  position: relative;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
@@ -33,6 +33,12 @@
   }
 }
 
-.site-list__link--current {
-  //
+.site-list__link--current::before {
+  content: "";
+  width: auto;
+  height: 2px;
+  display: block;
+  background-color: #68b738;
+  position: absolute;
+  // left: 16px;
 }

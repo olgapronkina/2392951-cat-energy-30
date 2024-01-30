@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -42,7 +42,7 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a
-                class="main-nav__link main-nav__link--current"
+                class="site-list__link site-list__link--current"
                 href="index.html"
                 aria-current="page"
               >
@@ -50,25 +50,25 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
 
             <li class="site-list__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="main-container">
-      <section class="preview">
-        <div class="preview__wrapper">
-          <h1 class="preview__title">Функциональное питание для котов</h1>
-          <p class="preview__intro">Занялся собой? Займись котом!</p>
-          <div class="preview__button">
-            <a class="preview__link" href="login.html">Подобрать программу</a>
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h1 class="intro__title">Функциональное питание для котов</h1>
+          <p class="intro__slogan">Занялся собой? Займись котом!</p>
+          <div class="intro__button">
+            <a class="intro__link" href="login.html">Подобрать программу</a>
           </div>
           <picture>
             <source
@@ -93,9 +93,9 @@
             />
 
             <img
-              class="preview__image"
-              src="../source/images/index-can-mobile@1x.png"
-              srcset="../source/images/index-can-mobile@2x.png"
+              class="intro__image"
+              src="./images/index-can-mobile@1x.png"
+              srcset="./images/index-can-mobile@2x.png"
               alt="Картинка продукта Cat Energy."
               width="280"
               height="270"
@@ -104,34 +104,28 @@
         </div>
       </section>
 
-      <section class="features">
-        <div class="features__wrapper">
-          <h2 class="visually-hidden">Цели</h2>
-          <div class="widget widget--weight-loss">
-            <h3 class="widget__title">Похудение</h3>
-
-            <div class="widget__content">
-              <p class="widget__paragraph">
+      <section class="programs">
+        <div class="programs__wrapper">
+          <h2 class="programs__title visually-hidden">Цели</h2>
+          <ul class="programs__list">
+            <li class="programs__item programs__item--weight-loss">
+              Похудение
+              <p class="programs__paragraph">
                 Ваш кот весит больше собаки и почти утратил способность лазить
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-
-              <a class="widget__link" href="#">Каталог slim</a>
-            </div>
-          </div>
-          <div class="widget widget--weight-add">
-            <h3 class="widget__title">Набор массы</h3>
-
-            <div class="widget__content">
-              <p class="widget__paragraph">
+              <a class="programs__link" href="#">Каталог slim</a>
+            </li>
+            <li class="programs__item programs__item--weight-gain">
+              Набор массы
+              <p class="programs__paragraph">
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-
-              <a class="widget__link" href="#">Каталог pro</a>
-            </div>
-          </div>
+              <a class="programs__link" href="#">Каталог pro</a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -182,21 +176,21 @@
           </p>
 
           <dl class="example__list">
-            <dt class="example__item">
-              5 кг
-              <dl class="example__description">снижение веса</dl>
+            <dt class="example__item example__item--weight">снижение веса</dt>
+            <dd class="example__description">5 кг</dd>
+
+            <dt class="example__item example__item--time">затрачено времени</dt>
+            <dd class="example__description">60 дней</dd>
+
+            <dt class="example__item example__item--price">
+              Затраты на питание:
             </dt>
-            <dt class="example__item">
-              60 дней
-              <dl class="example__description">затрачено времени</dl>
-            </dt>
-            <dt class="example__item">
+            <dd class="example__description example__description--price">
               15 000 руб.
-              <dl class="example__description">Затраты на питание:</dl>
-            </dt>
+            </dd>
           </dl>
         </div>
-        <button class="example__toogle" type="button">
+        <button class="example__slider" type="button">
           <span class="visually-hidden">ползунок</span>
         </button>
         <picture>
@@ -247,6 +241,7 @@
           </address>
         </div>
         <img
+          class="contacts__map"
           src="images/map-desktop.png"
           width="1440"
           height="400"
@@ -270,10 +265,10 @@
         <section class="main-footer__social social">
           <h3 class="visually-hidden">Мы в соц сетях</h3>
 
-          <ul class="social-list">
-            <li class="social-list__item social-item">
+          <ul class="social__list">
+            <li class="social__item">
               <a
-                class="social-item__link social-item__link--vkontakte"
+                class="social__link social__link--vkontakte"
                 href="#"
                 aria-label="ВКонтакте."
               >
@@ -291,9 +286,9 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-item">
+            <li class="social__item">
               <a
-                class="social-item__link social-item__link--youtube"
+                class="social__link social__link--youtube"
                 href="#"
                 aria-label="Ютуб."
               >
@@ -311,9 +306,9 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-item">
+            <li class="social__item">
               <a
-                class="social-item__link social-item__link--telegram"
+                class="social__link social__link--telegram"
                 href="#"
                 aria-label="Телеграм."
               >
@@ -335,23 +330,24 @@
             </li>
           </ul>
         </section>
-        <a class="main-footer__html-academy-logo" href="#">
-          HTML Academy
-          <svg
-            width="27"
-            height="34"
-            viewBox="0 0 27 34"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g>
+        <section class="main-footer__copyright copyright">
+          <a class="copyright__text" href="#">
+            HTML Academy
+            <svg
+              class="copyright__image"
+              width="27"
+              height="35"
+              viewBox="0 0 27 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+                d="M13.6426 0.515754L13.5 0.5L0 1.90733V26.5129L13.5 34.5L27 26.5129V1.90733L13.6426 0.515754ZM25.2344 25.5151L13.5 32.4573L1.76561 25.5151V15.4293L13.4507 22.3451L13.4701 23.5984L5.45351 18.8548L5.44295 20.0801L13.4894 24.8885L13.5088 26.175L5.46408 21.4174L5.45351 22.6427L13.5 27.4511L21.6239 22.6182V21.3929V17.409L25.2432 15.2595L25.2344 25.5151ZM25.2344 13.9519L22.0147 15.8319L20.5325 16.7071L13.4666 12.5201L13.456 13.7454L19.4957 17.318L19.4429 17.3495L19.3126 17.4247L18.4536 17.9166L13.4666 14.9689L13.456 16.1942L17.3921 18.5222L16.4591 19.1314L16.438 19.1436L13.4666 17.402L13.456 18.6273L15.4029 19.7615L13.4155 20.9483L1.7973 14.0762L13.4349 7.11831L25.2344 13.9519ZM25.2344 12.7266L13.4401 5.81075L1.76561 12.7196V3.4897L13.5 2.26442L25.2344 3.4897V12.7266Z"
                 fill="#666666"
               />
-            </g>
-          </svg>
-        </a>
+            </svg>
+          </a>
+        </section>
       </div>
     </footer>
   </body>

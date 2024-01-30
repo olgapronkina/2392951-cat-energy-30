@@ -1,0 +1,19 @@
+@import "../global/variables.scss";
+
+.user-comments {
+  border: none;
+}
+
+.user-comments__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.user-comments__input {
+  color: #444444;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}

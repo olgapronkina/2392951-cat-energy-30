@@ -1,13 +1,16 @@
 .intro {
-  //
+  // background-color: rgba(104, 183, 56, 0.851);
+  // background-image: url("../images/index-background-desktop@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: 50% -9px;
 }
 
 .intro__wrapper {
-  background: rgba(104, 183, 56, 0.85);
   color: #ffffff;
 }
 
 .intro__title {
+  margin: 0;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -17,6 +20,7 @@
 
 .intro__slogan {
   font-size: 14px;
+  margin: 0;
   font-weight: 400;
   line-height: 14px;
   color: #ffffff;
@@ -24,6 +28,14 @@
   text-transform: uppercase;
 }
 
+.intro__button {
+  //
+}
+
 .intro__link {
+  //
+}
+
+.intro__image {
   //
 }

@@ -1,0 +1,77 @@
+.adding-detales {
+  border: none;
+}
+
+.adding-detales__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.adding-detales__list {
+  font-size: 16px;
+  color: #444444;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.adding-detales__item {
+  //
+}
+
+.adding-detales__control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.adding-detales__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  outline: 1px solid #cdcdcd;
+}
+
+.adding-detales__control:hover .adding-detales__mark,
+.adding-detales__label:hover {
+  opacity: 0.6;
+}
+
+.adding-detales__control:active .adding-detales__mark,
+.adding-detales__label:active {
+  opacity: 0.3;
+}
+
+.adding-detales__input[type="checkbox"]:checked + .adding-detales__mark::before {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: 6px;
+  width: 12px;
+  height: 2px;
+  background-color: #68b738;
+  transform: rotate(-45deg);
+}
+
+.adding-detales__input[type="checkbox"]:checked + .adding-detales__mark::after {
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 3px;
+  width: 7px;
+  height: 2px;
+  background-color: #68b738;
+  transform: rotate(45deg);
+}
+
+.adding-detales__label {
+  color: #444444;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
