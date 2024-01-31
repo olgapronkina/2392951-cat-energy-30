@@ -10,14 +10,13 @@
     <header class="main-header">
       <a class="main-header__logo logo" href="index.html" aria-current="page">
         <picture>
-          <source
-            type="image/svg+xml"
-            media="(min-width: 768px)"
-            srcset="images/logo-icon.svg"
-          />
+          <source type="image/svg+xml" media="(min-width: 768px)" <<<<<<< HEAD
+          srcset="images/logo-icon.svg" ======= srcset="./images/logo-icon.svg"
+          width="60" height="50" >>>>>>>
+          cf4f3200c18bea58fe76f84718d20fc53690a36b />
           <img
             class="logo__image logo__image--icon"
-            src="../source/images/logo-icon-mobile.svg"
+            src="./images/logo-icon-mobile.svg"
             width="70"
             height="59"
             alt="логотип Cat energy."
@@ -26,7 +25,7 @@
 
         <img
           class="logo__image logo__image--text"
-          src="../source/images/logo-text.svg"
+          src="./images/logo-text.svg"
           width="118"
           height="21"
           alt="логотип Cat energy."
@@ -73,23 +72,36 @@
               type="image/png"
               media="(min-width: 1200px)"
               srcset="
+<<<<<<< HEAD
                 ./images/index-can-desktop@1x.png,
                 ./images/index-can-desktop@2x.png
+=======
+                ./images/index-can-desktop@1x.png 1x,
+                ./images/index-can-desktop@2x.png 2x
+>>>>>>> cf4f3200c18bea58fe76f84718d20fc53690a36b
               "
             />
             <source
               type="image/png"
               media="(min-width: 768px)"
               srcset="
+<<<<<<< HEAD
                 ./images/index-can-tablet@1x.png,
                 ./images/index-can-tablet@2x.png
+=======
+                ./images/index-can-tablet@1x.png 1x,
+                ./images/index-can-tablet@2x.png 2x
+>>>>>>> cf4f3200c18bea58fe76f84718d20fc53690a36b
               "
             />
 
             <img
               class="intro__image"
               src="./images/index-can-mobile@1x.png"
-              srcset="./images/index-can-mobile@2x.png"
+              srcset="
+                ./images/index-can-mobile@1x.png 1x,
+                ./images/index-can-mobile@2x.png 2x
+              "
               alt="Картинка продукта Cat Energy."
               width="280"
               height="270"
@@ -192,6 +204,7 @@
             type="image/jpg"
             media="(min-width: 768px)"
             srcset="
+<<<<<<< HEAD
               ../source/images/cat-before-tablet-desktop@1x.jpg 1x,
               ../source/images/cat-before-tablet-desktop@2x.jpg 2x
             "
@@ -201,6 +214,18 @@
             srcset="
               ../source/images/cat-before-mobile@1x.jpg 1x,
               ../source/images/cat-before-mobile@2x.jpg 2x
+=======
+              ./images/cat-before-tablet-desktop@1x.jpg 1x,
+              ./images/cat-before-tablet-desktop@2x.jpg 2x
+            "
+          />
+          <img
+            class="example__image example__image--fat"
+            src="./images/cat-before-mobile@1x.jpg"
+            srcset="
+              ./images/cat-before-mobile@1x.jpg 1x,
+              ./images/cat-before-mobile@2x.jpg 2x
+>>>>>>> cf4f3200c18bea58fe76f84718d20fc53690a36b
             "
             width="280"
             height="256"
@@ -213,14 +238,17 @@
             type="image/jpg"
             media="(min-width: 768px)"
             srcset="
-              ../source/images/cat-after-tablet-desktop@1x.jpg 1x,
-              ../source/images/cat-after-tablet-desktop@2x.jpg 2x
+              ./images/cat-after-tablet-desktop@1x.jpg 1x,
+              ./images/cat-after-tablet-desktop@2x.jpg 2x
             "
           />
           <img
-            class="example__image--slim"
-            src="../source/images/cat-after-mobile@1x.jpg"
-            srcset="../source/images/cat-after-mobile@2x.jpg"
+            class="example__image example__image--slim"
+            src="./images/cat-after-mobile@1x.jpg"
+            srcset="
+              ./images/cat-after-mobile@1x.jpg 1x,
+              ./images/cat-after-mobile@2x.jpg 2x
+            "
             width="280"
             height="256"
             alt="Кот Борис после того как попробавал питание Cat Energy."
@@ -238,7 +266,7 @@
         </div>
         <img
           class="contacts__map"
-          src="images/map-desktop.png"
+          src="./images/map-desktop.png"
           width="1440"
           height="400"
           alt="Наше местонахождение."
@@ -248,10 +276,10 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="logo__image logo__image--text" href="#" aria-current="page">
+        <a class="main-footer__logo logo" href="index.html" aria-current="page">
           <img
-            class="main-footer__main-logo-text"
-            src="../source/images/logo-text.svg"
+            class="logo__image logo__image--text"
+            src="./images/logo-text.svg"
             width="128"
             height="24"
             alt="логотип cat energy."
