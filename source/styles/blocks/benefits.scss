@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@import '../global/variables.scss';
 
 .benefits {
   //
@@ -24,29 +24,29 @@
 
 .benefits__item::after {
   display: block;
-  content: "";
+  content: '';
   width: 60px;
   height: 60px;
   background-position: center;
 }
 
 .benefits__item--nutrients::after {
-  background-image: url("../../images/icons/stack.svg#leaf");
+  background-image: url('../../images/icons/stack.svg#leaf');
   background-repeat: no-repeat;
 }
 
 .benefits__item--powder::after {
-  background-image: url("../../images/icons/stack.svg#powder");
+  background-image: url('../../images/icons/stack.svg#powder');
   background-repeat: no-repeat;
 }
 
 .benefits__item--substitute::after {
-  background-image: url("../../images/icons/stack.svg#silverware");
+  background-image: url('../../images/icons/stack.svg#silverware');
   background-repeat: no-repeat;
 }
 
 .benefits__item--pleasure::after {
-  background-image: url("../../images/icons/stack.svg#alarm");
+  background-image: url('../../images/icons/stack.svg#alarm');
   background-repeat: no-repeat;
 }
 

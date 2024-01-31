@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@import '../global/variables.scss';
 
 .programs {
   //
@@ -16,11 +16,17 @@
   background: #f2f2f2;
 
   &--weight-loss {
-    background-image: url("../../images/icons/stack.svg#cat-black");
+    background-image: url('../../images/icons/stack.svg#cat-black');
+    background-size: 50px 53px;
+    background-repeat: no-repeat;
+    background-position-x: 40px;
   }
 
   &--weight-gain {
-    background-image: url("../../images/icons/stack.svg#panter-black");
+    background-image: url('../../images/icons/stack.svg#panter-black');
+    background-size: 67px 50px;
+    background-repeat: no-repeat;
+    background-position-x: 33px;
   }
 }
 
@@ -63,12 +69,12 @@
 
 .programs__link::after {
   display: block;
-  content: "";
+  content: '';
   width: 32px;
   height: 10px;
   margin-left: 15px;
-  background-color: #000000;
-  mask-image: url("../../images/icons/stack.svg#icon-arrow");
+  background-color: rgb(0, 0, 0);
+  mask-image: url('../../images/icons/icon-arrow.svg');
   mask-position: center;
   mask-repeat: no-repeat;
   background-position-x: -8px;
