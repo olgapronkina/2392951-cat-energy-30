@@ -1,12 +1,22 @@
 .intro {
-  // background-color: rgba(104, 183, 56, 0.851);
-  // background-image: url("../images/index-background-desktop@1x.jpg");
-  // background-repeat: no-repeat;
-  // background-position: 50% -9px;
+  //
+  ::before {
+    background-color: rgba(104, 183, 56, 0.851);
+  }
 }
 
 .intro__wrapper {
+  background-image: url('../../images/index-background-mobile@1x.jpg');
   color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  object-fit: contain;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../images/index-background-mobile@2x.jpg');
+  }
 }
 
 .intro__title {
@@ -14,7 +24,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
