@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@import '../global/variables.scss';
 
 *,
 *::before,
@@ -9,6 +9,7 @@
 img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 body {
